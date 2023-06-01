@@ -15,10 +15,10 @@ function renderBook(book) {
     let quantityInput = document.createElement('input')
     quantityInput.value = book.quantity
 
-    let saveButton = document.createElement('button')
-    saveButton.textContent = 'Save'
+    let saveySaveButton = document.createElement('button')
+    saveySaveButton.textContent = 'Savey Save Me Baby-Cakes!'
 
-    saveButton.addEventListener('click', () => {
+    saveySaveButton.addEventListener('click', () => {
         fetch('http://localhost:3001/updateBook', {
             method: 'PATCH',
             headers: {
@@ -31,7 +31,7 @@ function renderBook(book) {
         })
     })
 
-    li.append(quantityInput, saveButton)
+    li.append(quantityInput, saveySaveButton)
 
     root.append(li)
 }
